@@ -63,6 +63,15 @@
             font-weight: 600;
             margin-top: 1rem;
         }
+        .section-summary {
+            background: #e7f3ef;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: left;
+            font-size: 1rem;
+            color: #1a3c34;
+        }
         @media (max-width: 640px) {
             .card {
                 padding: 1rem;
@@ -79,6 +88,10 @@
             .header-company-name {
                 font-size: 0.9rem;
             }
+            .section-summary {
+                font-size: 0.9rem;
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -90,15 +103,18 @@
             <p class="header-company-name">Al-Shafi Group Global</p>
         </div>
         <h1 class="text-3xl md:text-4xl font-bold">Fertilizer Products in Pakistan</h1>
-        <p class="mt-2 text-lg">Explore production, capacity, demand, uses, and importance of fertilizers for agriculture</p>
-<p class="header-report"><i>Report by Hur Abbas Rana</i></p>
+        <p class="mt-2 text-lg">Explore production, capacity, demand, regional use, crop suitability, and application timing</p>
+        <p class="header-report"><i>Report by Hur Abbas Rana</i></p>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
         <!-- NP and NPK Fertilizers Section -->
         <section>
-            <h2 class="section-title">NP and NPK Fertilizers (Demand: ~0.34M tonnes/year)</h2>
+            <h2 class="section-title">NP and NPK Fertilizers (Demand: ~0.34M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> NP and NPK fertilizers provide balanced nitrogen, phosphorus, and potassium for a wide range of crops, enhancing root development, fruit quality, and yield. Key products include Engro NP, Zarkhaiz SOP/MOP, and Fatima NP (Sarsabz, Pakarab). Total production in Pakistan is approximately 405,000 MT/year, meeting a significant portion of the 340,000 MT/year demand, with the remainder imported, particularly SOP and MOP components. These fertilizers are critical for high-yield crops like wheat, rice, and fruits, especially in Punjab and Sindh.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Engro NP -->
                 <div class="card">
@@ -106,9 +122,12 @@
                     <p><strong>Brand:</strong> Engro NP</p>
                     <p><strong>Composition:</strong> 18% N, 18% P2O5</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Engro Fertilizers’ plants in Dharki, Ghotki, Sindh (100,000 tonnes/year), and Port Qasim, Karachi (100,000 tonnes/year). Total NP capacity: 200,000 tonnes/year.</p>
+                    <p>Produced at Engro Fertilizers’ plants in Dharki, Ghotki, Sindh (100,000 MT/year), and Port Qasim, Karachi (100,000 MT/year). Total NP capacity: 200,000 MT/year.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, cotton, sugarcane, vegetables, fruits.<br><strong>Application:</strong> Basal at sowing for balanced N-P nutrition.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, cotton, sugarcane, vegetables, fruits.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad, Multan; fertile alluvial soils, ideal for wheat, cotton), Sindh (Hyderabad, Mirpurkhas; suitable for rice, sugarcane).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing, mixed into soil; phosphorus supplemented at first irrigation if missed at sowing.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Ensures root and shoot growth; increases yields by 10–15% in cereals.</p>
                 </div>
@@ -118,9 +137,12 @@
                     <p><strong>Brand:</strong> Zarkhaiz SOP</p>
                     <p><strong>Composition:</strong> NPK 8:23:18, 15:15:15, or 17:17:17 (SOP-based)</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Blended at Engro’s Zarkhez NPK plant in Port Qasim, Karachi (50,000 tonnes/year). SOP component is imported.</p>
+                    <p>Blended at Engro’s Zarkhez NPK plant in Port Qasim, Karachi (50,000 MT/year). SOP component is imported.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Tobacco, potato, fruits (mango, citrus), vegetables.<br><strong>Application:</strong> Basal or fertigation for chloride-sensitive crops.</p>
+                    <p><strong>Crops:</strong> Tobacco, potato, fruits (mango, citrus), vegetables.<br>
+                       <strong>Regions & Suitability:</strong> Khyber Pakhtunkhwa (Peshawar, Mardan; silty clays ideal for tobacco, potato), Punjab (Sahiwal; suitable for vegetables, fruits).<br>
+                       <strong>Months:</strong> Kharif (Jun–Aug) for vegetables; year-round for fruits.<br>
+                       <strong>Application Timing:</strong> Applied basally at planting; fertigation during growth for fruits and vegetables.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Enhances fruit quality, disease resistance; improves NUE by 15–20%.</p>
                 </div>
@@ -130,9 +152,12 @@
                     <p><strong>Brand:</strong> Zarkhaiz MOP</p>
                     <p><strong>Composition:</strong> NPK 8:23:18, 15:15:15, or 17:17:17 (MOP-based)</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Blended at Engro’s Zarkhez NPK plant in Port Qasim, Karachi (50,000 tonnes/year). MOP component is imported.</p>
+                    <p>Blended at Engro’s Zarkhez NPK plant in Port Qasim, Karachi (50,000 MT/year). MOP component is imported.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Sugarcane, maize, wheat, vegetables.<br><strong>Application:</strong> Basal for chloride-tolerant crops.</p>
+                    <p><strong>Crops:</strong> Sugarcane, maize, wheat, vegetables.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Rahim Yar Khan; loamy soils for sugarcane), Sindh (Tando Muhammad Khan; suitable for maize, vegetables).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for sugarcane, maize.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; potassium supplemented at first irrigation for maize.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Cost-effective; boosts yield by 10–15% in bulk crops.</p>
                 </div>
@@ -142,9 +167,12 @@
                     <p><strong>Brand:</strong> NP Sarsabz</p>
                     <p><strong>Composition:</strong> 22% N, 20% P2O5</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Fatima Fertilizer’s plant in Sheikhupura, Punjab (55,000 tonnes/year), and Pakarab Fertilizers’ plant in Multan, Punjab (50,000 tonnes/year). Total NP capacity: 105,000 tonnes/year.</p>
+                    <p>Produced at Fatima Fertilizer’s plant in Sheikhupura, Punjab (55,000 MT/year), and Pakarab Fertilizers’ plant in Multan, Punjab (50,000 MT/year). Total NP capacity: 105,000 MT/year.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br><strong>Application:</strong> Basal at sowing for early vigor.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Sheikhupura, Multan; fertile loams for wheat, cotton), Sindh (Larkana; ideal for rice, sugarcane).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; phosphorus supplemented at first irrigation if missed.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Trusted for high-yield crops; improves yield by 10–15%.</p>
                 </div>
@@ -154,9 +182,12 @@
                     <p><strong>Brand:</strong> NP Pakarab</p>
                     <p><strong>Composition:</strong> 22% N, 20% P2O5</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Pakarab Fertilizers’ plant in Multan, Punjab (50,000 tonnes/year).</p>
+                    <p>Produced at Pakarab Fertilizers’ plant in Multan, Punjab (50,000 MT/year).</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br><strong>Application:</strong> Basal for root development.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Multan, Faisalabad; loamy soils for wheat, cotton), Sindh (Sukkur; suitable for rice, sugarcane).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; phosphorus supplemented at first irrigation if missed.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Cost-effective; supports smallholder farmers with balanced nutrition.</p>
                 </div>
@@ -165,16 +196,22 @@
 
         <!-- Urea Section -->
         <section>
-            <h2 class="section-title">Urea Fertilizers (46% N, Demand: ~6.2M tonnes/year)</h2>
+            <h2 class="section-title">Urea Fertilizers (46% N, Demand: ~6.2M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Urea, the most widely used fertilizer in Pakistan, supplies high nitrogen content for vigorous crop growth. Key brands include FFC Sona Urea, Engro Urea, Fatima Urea, and Agritech Urea. Pakistan produces approximately 6,110,000 MT/year, nearly meeting the 6,200,000 MT/year demand, with minor imports. It is essential for major crops like wheat, rice, and sugarcane, primarily in Punjab and Sindh, supporting 70% of the nation’s nitrogen needs.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- FFC Urea -->
                 <div class="card">
                     <h3 class="card-title">FFC Urea Products</h3>
                     <p><strong>Brands:</strong> Sona Urea Prilled, Sona Urea Granular, Urea Zinc Coated, Urea Neem Coated, Urea Tara</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Fauji Fertilizer Company’s plants in Goth Machhi(RYK), Sadiqabad, Punjab (1660,000 MT/year), and Mirpur Mathelo, Sindh (830,000 MT/year). Total capacity: 2,490,000 MT/year.</p>
+                    <p>Produced at Fauji Fertilizer Company’s plants in Goth Machhi (RYK), Sadiqabad, Punjab (1,660,000 MT/year), and Mirpur Mathelo, Sindh (830,000 MT/year). Total capacity: 2,490,000 MT/year.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Rice, wheat, maize, sugarcane, cotton, vegetables, orchards.<br><strong>Application:</strong> Basal or top-dressing; zinc for rice/wheat, neem for sugarcane.</p>
+                    <p><strong>Crops:</strong> Rice, wheat, maize, sugarcane, cotton, vegetables, orchards.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad, Multan; loamy soils for wheat, cotton), Sindh (Hyderabad, Mirpurkhas; clayey soils for rice, sugarcane), Khyber Pakhtunkhwa (Mardan; suitable for maize, orchards).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, maize, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally (50%) at sowing, top-dressed (50%) at first/second irrigation; for rice, basal in mud, top-dressed at panicle initiation.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>70% of Pakistan’s N consumption; improves yield by 10–20%, enhances sustainability.</p>
                 </div>
@@ -183,9 +220,12 @@
                     <h3 class="card-title">Engro Urea Products</h3>
                     <p><strong>Brands:</strong> Engro Urea, Zabardast Urea</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Engro Fertilizers’ plants in Dharki, Ghotki, Sindh (1,300,000 tonnes/year), and Port Qasim, Karachi (800,000 tonnes/year). Total capacity: 2,100,000 tonnes/year.</p>
+                    <p>Produced at Engro Fertilizers’ plants in Dharki, Ghotki, Sindh (1,300,000 MT/year), and Port Qasim, Karachi (800,000 MT/year). Total capacity: 2,100,000 MT/year.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, cotton, sugarcane, vegetables, fruits.<br><strong>Application:</strong> Basal or top-dressing.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, cotton, sugarcane, vegetables, fruits.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Lahore, Multan; fertile loams for wheat, cotton), Sindh (Larkana, Sukkur; ideal for rice, sugarcane).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally (50%) at sowing, top-dressed (50%) at first/second irrigation; for rice, basal in mud, top-dressed at panicle initiation.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Zabardast corrects Zn deficiency; boosts yield by 8–12%.</p>
                 </div>
@@ -194,9 +234,12 @@
                     <h3 class="card-title">Fatima Urea Products</h3>
                     <p><strong>Brand:</strong> Urea Fatima</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Fatima Fertilizer’s plants in Sheikhupura(U-BS), Punjab (500,000 MT/year), Sadiqabad, Rahim Yar Khan, Punjab (600,000 MT/year) and Multan, Punjab (200,000 MT/year). Total capacity: 1,300,000 tonnes/year.</p>
+                    <p>Produced at Fatima Fertilizer’s plants in Sheikhupura, Punjab (500,000 MT/year), Sadiqabad, Rahim Yar Khan, Punjab (600,000 MT/year), and Multan, Punjab (200,000 MT/year). Total capacity: 1,300,000 MT/year.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br><strong>Application:</strong> Basal or top-dressing.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Sheikhupura, Rahim Yar Khan; loamy soils for wheat, cotton), Sindh (Tando Muhammad Khan; suitable for rice, sugarcane).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, maize, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally (50%) at sowing, top-dressed (50%) at first/second irrigation; for rice, basal in mud, top-dressed at panicle initiation.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Promotes vigorous growth; widely used for high-yield crops.</p>
                 </div>
@@ -207,7 +250,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Produced at Agritech Limited’s plant in Mianwali, Punjab (420,000 MT/year).</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br><strong>Application:</strong> Basal or top-dressing.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, maize, cotton, sugarcane.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Mianwali, Faisalabad; loamy soils for wheat, cotton), Khyber Pakhtunkhwa (D.I. Khan; suitable for maize, sugarcane).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, maize, cotton, sugarcane.<br>
+                       <strong>Application Timing:</strong> Applied basally (50%) at sowing, top-dressed (50%) at first/second irrigation; for rice, basal in mud, top-dressed at panicle initiation.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Supports high-yield crops in Khyber Pakhtunkhwa and northern Punjab.</p>
                 </div>
@@ -216,7 +262,10 @@
 
         <!-- DAP Section -->
         <section>
-            <h2 class="section-title">DAP Fertilizers (18% N, 46% P2O5, Demand: ~1.2M tonnes/year)</h2>
+            <h2 class="section-title">DAP Fertilizers (18% N, 46% P2O5, Demand: ~1.2M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Diammonium Phosphate (DAP) fertilizers provide nitrogen and high phosphorus content, addressing widespread phosphorus deficiency in 80% of Pakistani soils. Key brands include FFC Sona DAP, Engro DAP, and Fatima DAP (Pakarab, Babar Sher). Pakistan produces 900,000 MT/year, with 300,000 MT/year imported to meet the 1,200,000 MT/year demand. DAP is vital for crops like wheat, rice, and pulses, especially in Punjab, Sindh, and Balochistan.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- FFC DAP -->
                 <div class="card">
@@ -225,7 +274,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Sona DAP produced at Fauji Fertilizer Bin Qasim Limited’s plant in Bin Qasim, Karachi (800,000 MT/year). Sona DAP Imported is imported.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, cotton, pulses, oilseeds.<br><strong>Application:</strong> Basal at sowing; fertigation compatible.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, cotton, pulses, oilseeds.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Multan, Faisalabad; loamy soils for wheat, cotton), Sindh (Hyderabad; suitable for rice, pulses), Balochistan (Quetta; ideal for pulses, oilseeds).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat, pulses; Kharif (Jun–Aug) for rice, cotton, oilseeds.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing, incorporated into soil; fertigation post-planting for rice, cotton.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Corrects P deficiency (80% of soils); boosts yield by 10–20%.</p>
                 </div>
@@ -236,7 +288,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by Engro Eximp.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, cotton, pulses.<br><strong>Application:</strong> Basal or side-dressing.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, cotton, pulses.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Lahore, Multan; fertile loams for wheat, cotton), Sindh (Sukkur; suitable for rice, pulses).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat, pulses; Kharif (Jun–Aug) for rice, cotton.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; side-dressing at first irrigation for rice.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Zorawar improves P uptake in alkaline soils.</p>
                 </div>
@@ -245,9 +300,12 @@
                     <h3 class="card-title">Fatima DAP Products</h3>
                     <p><strong>Brands:</strong> DAP Pakarab, DAP Babar Sher</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Pakarab Fertilizers’ plant in Multan, Punjab (100,000 tonnes/year).</p>
+                    <p>Produced at Pakarab Fertilizers’ plant in Multan, Punjab (100,000 MT/year).</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, cotton, pulses.<br><strong>Application:</strong> Basal near roots.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, cotton, pulses.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Multan, Sheikhupura; loamy soils for wheat, cotton), Sindh (Larkana; suitable for rice, pulses).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat, pulses; Kharif (Jun–Aug) for rice, cotton.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; fertigation post-planting for rice.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Cost-effective for smallholder farmers.</p>
                 </div>
@@ -258,7 +316,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported or blended at small-scale facilities in Punjab and Sindh.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, pulses, oilseeds.<br><strong>Application:</strong> Basal.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, pulses, oilseeds.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad; loamy soils for wheat), Sindh (Hyderabad; suitable for rice, pulses), Balochistan (Quetta; ideal for pulses, oilseeds).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat, pulses; Kharif (Jun–Aug) for rice, oilseeds.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; fertigation for rice, pulses.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Affordable P sources for small farmers.</p>
                 </div>
@@ -267,7 +328,10 @@
 
         <!-- SOP Section -->
         <section>
-            <h2 class="section-title">SOP Fertilizers (50% K2O, 18% S, Demand: ~0.02M tonnes/year)</h2>
+            <h2 class="section-title">SOP Fertilizers (50% K2O, 18% S, Demand: ~0.02M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Sulphate of Potash (SOP) fertilizers provide potassium and sulphur, ideal for chloride-sensitive crops like tobacco and fruits. Brands include FFC SOP Sona, Engro SOP, and others (Barkat, 7ST, VAH). Pakistan has no domestic production (0 MT/year), with the entire 20,000 MT/year demand met through imports. SOP is crucial for high-value crops in Khyber Pakhtunkhwa and Punjab, enhancing quality and export potential.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- FFC SOP -->
                 <div class="card">
@@ -276,7 +340,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by Fauji Fertilizer Company.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Tobacco, potato, fruits, vegetables.<br><strong>Application:</strong> Basal, fertigation.</p>
+                    <p><strong>Crops:</strong> Tobacco, potato, fruits (mango, citrus), vegetables.<br>
+                       <strong>Regions & Suitability:</strong> Khyber Pakhtunkhwa (Peshawar, Swat; silty clays for tobacco, potato), Punjab (Sahiwal; suitable for fruits, vegetables).<br>
+                       <strong>Months:</strong> Kharif (Jun–Aug) for vegetables; year-round for fruits.<br>
+                       <strong>Application Timing:</strong> Applied basally at planting; fertigation for fruits, vegetables.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Chloride-free; boosts fruit quality, yield by 5–10%.</p>
                 </div>
@@ -287,7 +354,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by Engro Eximp.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Potato, tobacco, fruits.<br><strong>Application:</strong> Basal, fertigation.</p>
+                    <p><strong>Crops:</strong> Tobacco, potato, fruits (mango, citrus).<br>
+                       <strong>Regions & Suitability:</strong> Khyber Pakhtunkhwa (Mardan, Swat; ideal for tobacco, potato), Punjab (Multan; suitable for fruits).<br>
+                       <strong>Months:</strong> Kharif (Jun–Aug) for vegetables; year-round for fruits.<br>
+                       <strong>Application Timing:</strong> Applied basally at planting; fertigation for fruits.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Supports high-value crop exports.</p>
                 </div>
@@ -298,7 +368,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by various companies or blended at small-scale facilities in Punjab and Sindh.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Tobacco, potato, fruits.<br><strong>Application:</strong> Basal.</p>
+                    <p><strong>Crops:</strong> Tobacco, potato, fruits (mango, citrus).<br>
+                       <strong>Regions & Suitability:</strong> Khyber Pakhtunkhwa (Peshawar; silty clays for tobacco, potato), Punjab (Lahore; suitable for fruits).<br>
+                       <strong>Months:</strong> Kharif (Jun–Aug) for vegetables; year-round for fruits.<br>
+                       <strong>Application Timing:</strong> Applied basally at planting; fertigation for fruits.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Affordable for high-value crops.</p>
                 </div>
@@ -307,7 +380,10 @@
 
         <!-- MOP Section -->
         <section>
-            <h2 class="section-title">MOP Fertilizers (60% K2O, Demand: ~0.01M tonnes/year)</h2>
+            <h2 class="section-title">MOP Fertilizers (60% K2O, Demand: ~0.01M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Muriate of Potash (MOP) fertilizers supply high potassium content for chloride-tolerant crops like sugarcane and maize. Brands include FFC MOP Sona, Engro MOP, and others (Barkat, 7ST, VAH). Pakistan has no domestic production (0 MT/year), with the 10,000 MT/year demand fully met by imports. MOP is cost-effective for bulk crops in Punjab, Sindh, and Khyber Pakhtunkhwa, boosting yields significantly.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- FFC MOP -->
                 <div class="card">
@@ -316,7 +392,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by Fauji Fertilizer Company.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Sugarcane, maize, wheat.<br><strong>Application:</strong> Basal, side-dressing.</p>
+                    <p><strong>Crops:</strong> Sugarcane, maize, wheat.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Rahim Yar Khan; loamy soils for sugarcane), Sindh (Tando Muhammad Khan; suitable for maize), Khyber Pakhtunkhwa (D.I. Khan; ideal for wheat).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for sugarcane, maize.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; side-dressing at first irrigation for maize, sugarcane.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Cost-effective; boosts yield by 10–15%.</p>
                 </div>
@@ -327,7 +406,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by Engro Eximp.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Sugarcane, maize, wheat.<br><strong>Application:</strong> Basal.</p>
+                    <p><strong>Crops:</strong> Sugarcane, maize, wheat.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Multan; loamy soils for sugarcane), Sindh (Hyderabad; suitable for maize), Khyber Pakhtunkhwa (Peshawar; ideal for wheat).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for sugarcane, maize.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; side-dressing at first irrigation for maize, sugarcane.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Reliable K source for bulk crops.</p>
                 </div>
@@ -338,24 +420,34 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by various companies.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Sugarcane, maize, wheat.<br><strong>Application:</strong> Basal.</p>
+                    <p><strong>Crops:</strong> Sugarcane, maize, wheat.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad; loamy soils for sugarcane), Sindh (Sukkur; suitable for maize), Khyber Pakhtunkhwa (Mardan; ideal for wheat).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for sugarcane, maize.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing; side-dressing at first irrigation for maize, sugarcane.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Budget-friendly K fertilizers.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
         <!-- SSP Section -->
         <section>
-            <h2 class="section-title">SSP Fertilizer (18% P2O5, 12% S, Demand: ~0.18M tonnes/year)</h2>
+            <h2 class="section-title">SSP Fertilizer (18% P2O5, 12% S, Demand: ~0.18M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Single Super Phosphate (SSP) fertilizers deliver phosphorus and sulphur, suitable for sulphur-deficient soils. The primary brand is FFC SSP Tara. Domestic production has ceased (0 MT/year, previously 180,000 MT/year), with the 180,000 MT/year demand met through imports. SSP is used for wheat, rice, and oilseeds, mainly in Punjab and Sindh, offering a cost-effective nutrient source.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- FFC SSP -->
                 <div class="card">
                     <h3 class="card-title">FFC SSP Product</h3>
                     <p><strong>Brand:</strong> SSP Tara</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Production stopped at Fauji Fertilizer Bin Qasim Limited’s plant in Bin Qasim, Karachi (was 180,000 tonnes/year). Now imported by Fauji Fertilizer Company.</p>
+                    <p>Production stopped at Fauji Fertilizer Bin Qasim Limited’s plant in Bin Qasim, Karachi (was 180,000 MT/year). Now imported by Fauji Fertilizer Company.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, oilseeds, pulses.<br><strong>Application:</strong> Basal, mixed into soil.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, oilseeds, pulses.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad, Multan; loamy soils for wheat, pulses), Sindh (Hyderabad; suitable for rice), Balochistan (Quetta; ideal for oilseeds, pulses).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat, pulses; Kharif (Jun–Aug) for rice, oilseeds.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing, mixed into soil; avoid seed contact.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Cost-effective for S-deficient soils; boosts yield by 5–10%.</p>
                 </div>
@@ -364,16 +456,22 @@
 
         <!-- CAN Section -->
         <section>
-            <h2 class="section-title">CAN Fertilizers (26% N, 14% Ca, Demand: ~0.45M tonnes/year)</h2>
+            <h2 class="section-title">CAN Fertilizers (26% N, 14% Ca, Demand: ~0.45M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Calcium Ammonium Nitrate (CAN) fertilizers provide nitrogen and calcium with lower nitrogen loss than urea. Fatima’s CAN brands (Cake PFL, Pakarab, Fatima) dominate the market. Pakistan produces 450,000 MT/year, fully meeting the 450,000 MT/year demand. CAN is used for wheat, rice, and orchards, primarily in Punjab and Sindh, supporting stable yields.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Fatima CAN -->
                 <div class="card">
                     <h3 class="card-title">Fatima CAN Products</h3>
                     <p><strong>Brands:</strong> CAN C (Cake PFL), CAN F (Pakarab), CAN G (Fatima)</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Pakarab Fertilizers’ plant in Multan, Punjab (225,000 tonnes/year), and Fatima Fertilizer’s plant in Sadiqabad, Rahim Yar Khan, Punjab (225,000 tonnes/year). Total capacity: 450,000 tonnes/year.</p>
+                    <p>Produced at Pakarab Fertilizers’ plant in Multan, Punjab (225,000 MT/year), and Fatima Fertilizer’s plant in Sadiqabad, Rahim Yar Khan, Punjab (225,000 MT/year). Total capacity: 450,000 MT/year.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Wheat, rice, maize, vegetables, orchards.<br><strong>Application:</strong> Basal, top-dressing.</p>
+                    <p><strong>Crops:</strong> Wheat, rice, maize, vegetables, orchards.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Multan, Sheikhupura; loamy soils for wheat, maize), Sindh (Larkana; suitable for rice), Khyber Pakhtunkhwa (Peshawar; ideal for orchards, vegetables).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, maize, vegetables; year-round for orchards.<br>
+                       <strong>Application Timing:</strong> Applied basally (50%) at sowing, top-dressed (50%) at first/second irrigation; for rice, basal in mud, top-dressed at panicle initiation.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Less N loss than urea; improves yield by 10–15%.</p>
                 </div>
@@ -382,16 +480,22 @@
 
         <!-- A-S Section -->
         <section>
-            <h2 class="section-title">A-S Fertilizers (21% N, 24% S, Demand: ~0.03M tonnes/year)</h2>
+            <h2 class="section-title">A-S Fertilizers (21% N, 24% S, Demand: ~0.03M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Ammonium Sulphate (A-S) fertilizers supply nitrogen and sulphur, ideal for oilseeds and rice. Brands include Engro A-S and others (Barkat, 7ST, VAH). Domestic production has stopped (0 MT/year, previously 100,000 MT/year), with the 30,000 MT/year demand met by imports. A-S is used in Punjab, Sindh, and Khyber Pakhtunkhwa, enhancing oil content in crops.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Engro A-S -->
                 <div class="card">
                     <h3 class="card-title">Engro A-S Product</h3>
                     <p><strong>Brand:</strong> Engro A-S</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Production stopped at Engro’s Dharki plant, Ghotki, Sindh (was 100,000 tonnes/year). Now imported by Engro Eximp.</p>
+                    <p>Production stopped at Engro’s Dharki plant, Ghotki, Sindh (was 100,000 MT/year). Now imported by Engro Eximp.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Oilseeds, rice, wheat, tea.<br><strong>Application:</strong> Basal, fertigation.</p>
+                    <p><strong>Crops:</strong> Oilseeds, rice, wheat, tea.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad; loamy soils for wheat, oilseeds), Sindh (Hyderabad; suitable for rice), Khyber Pakhtunkhwa (Swat; ideal for tea).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, oilseeds; year-round for tea.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing, avoid seed contact; fertigation for rice, tea.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Addresses S deficiency; increases oil content by 5–8%.</p>
                 </div>
@@ -402,7 +506,10 @@
                     <p class="card-subtitle">Production</p>
                     <p>Imported by various companies.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Oilseeds, rice, wheat.<br><strong>Application:</strong> Basal.</p>
+                    <p><strong>Crops:</strong> Oilseeds, rice, wheat.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Multan; loamy soils for wheat, oilseeds), Sindh (Sukkur; suitable for rice), Balochistan (Quetta; ideal for oilseeds).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, oilseeds.<br>
+                       <strong>Application Timing:</strong> Applied basally at sowing, avoid seed contact; fertigation for rice.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Affordable S source for farmers.</p>
                 </div>
@@ -411,16 +518,22 @@
 
         <!-- Micronutrient Section -->
         <section>
-            <h2 class="section-title">Micronutrient Fertilizers (Demand: ~0.05M tonnes/year)</h2>
+            <h2 class="section-title">Micronutrient Fertilizers (Demand: ~0.05M MT/year)</h2>
+            <div class="section-summary">
+                <p><strong>Summary:</strong> Micronutrient fertilizers, such as zinc and boron, address critical deficiencies in crops like rice and citrus. Brands include FFC Sona Zinc, Boron Borex, and Engro Zinc Zoran, Zoron. Pakistan produces approximately 50,000 MT/year, meeting the 50,000 MT/year demand, with some imports. These fertilizers are vital for improving grain and fruit quality in Punjab, Sindh, and Khyber Pakhtunkhwa.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- FFC Micronutrients -->
                 <div class="card">
                     <h3 class="card-title">FFC Micronutrient Products</h3>
                     <p><strong>Brands:</strong> Sona Zinc, Boron Borex</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Fauji Fertilizer Bin Qasim Limited’s plant in Bin Qasim, Karachi (25,000 tonnes/year), or imported by Fauji Fertilizer Company.</p>
+                    <p>Produced at Fauji Fertilizer Bin Qasim Limited’s plant in Bin Qasim, Karachi (25,000 MT/year), or imported by Fauji Fertilizer Company.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Rice, wheat, cotton, citrus, maize.<br><strong>Application:</strong> Soil, foliar, seed treatment.</p>
+                    <p><strong>Crops:</strong> Rice, wheat, cotton, citrus, maize.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Faisalabad, Multan; loamy soils for wheat, cotton), Sindh (Hyderabad; suitable for rice), Khyber Pakhtunkhwa (Mardan; ideal for citrus, maize).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, cotton, maize; year-round for citrus.<br>
+                       <strong>Application Timing:</strong> Zinc sulphate (12.5 kg/ha) applied 7–10 days after transplanting for rice; soil or foliar application for wheat, cotton, citrus, maize.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Corrects Zn/B deficiency; boosts yield by 10–20%.</p>
                 </div>
@@ -429,9 +542,12 @@
                     <h3 class="card-title">Engro Micronutrient Products</h3>
                     <p><strong>Brands:</strong> Zinc Zoran, Engro Zoron</p>
                     <p class="card-subtitle">Production</p>
-                    <p>Produced at Engro Fertilizers’ plant in Dharki, Ghotki, Sindh (25,000 tonnes/year), or imported by Engro Eximp.</p>
+                    <p>Produced at Engro Fertilizers’ plant in Dharki, Ghotki, Sindh (25,000 MT/year), or imported by Engro Eximp.</p>
                     <p class="card-subtitle">Uses</p>
-                    <p><strong>Crops:</strong> Rice, wheat, maize, cotton.<br><strong>Application:</strong> Soil, foliar.</p>
+                    <p><strong>Crops:</strong> Rice, wheat, maize, cotton.<br>
+                       <strong>Regions & Suitability:</strong> Punjab (Lahore, Multan; loamy soils for wheat, cotton), Sindh (Sukkur; suitable for rice, maize).<br>
+                       <strong>Months:</strong> Rabi (Nov–Jan) for wheat; Kharif (Jun–Aug) for rice, maize, cotton.<br>
+                       <strong>Application Timing:</strong> Zinc sulphate (12.5 kg/ha) applied 7–10 days after transplanting for rice; soil or foliar application for wheat, maize, cotton.</p>
                     <p class="card-subtitle">Importance</p>
                     <p>Improves grain quality; yield up by 10–15%.</p>
                 </div>
